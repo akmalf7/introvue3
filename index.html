@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue Mastery</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="nav-bar"></div>
+
+      <div class="cart">cart({{ cart.length }})</div>
+      <product-display :premium="premium" @add-to-cart="updateCart" @remove-from-cart="decreaseCart"></product-display>
+    </div>
+
+    <!-- Import App -->
+    <script src="./main.js"></script>
+
+    <!-- Import Components -->
+    <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/ProductDetails.js"></script>
+    <script src="./components/ReviewForm.js"></script>
+    <script src="./components/ReviewList.js"></script>
+
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
+</html>
+
+<!-- <p v-if="inventory > 10">In stock</p>
+        <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out!</p>
+        <p v-else>Out of stock</p> -->
+
+<!-- Code Challenge List Rendering (4) -->
+
+<!-- <ul>
+          <li v-for="(size, index) in sizes" :key="index">{{ size }}</li>
+        </ul> -->
+
+<!-- Code Challenge List Rendering (4) -->
+
+<!-- Add to cart button -->
+
+<!-- <button class="bu ton" v-on:click="addToCart">Add to Cart</button> -->
+
+<!-- Remove from cart button-->
+
+<!-- <button class="button" v-on:click="removeFromCart">Remove Item</button> -->
+
+<!-- Code Challenge Conditional Rendering (3) -->
+
+<!-- <p v-if="onSale">On Sale!</p> -->
+<!-- <p v-show="onSale">On Sale!</p> -->
+
+<!-- Code Challenge Conditional Rendering (3) -->
